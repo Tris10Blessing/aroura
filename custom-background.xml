@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <name>Custom Background</name>
+        <description>Customizing Background option from the PHB.</description>
+        <author url="https://www.reddit.com/user/FrostyEdge/">FrostyEdge</author>
+		<update version="0.1">
+			<file name="custom-background.xml"/>
+		</update>
+	</info>
+	<element name="Custom Background" type="Background" source="PHB" id="ID_CUSTOM_BACKGROUND">
+		<description>
+            <p>You might want to tweak some of the features of a background so it better fits your character or the campaign setting.
+             To customize a background, you can replace one feature with any other one, choose any two skills, and choose a total of two tool proficiencies or languages from the sample backgrounds.
+             You can either use the equipment package from your background or spend coin on gear as described in the Equipment section.
+             (If you spend coin, you can’t also take the equipment package suggested for your class.)
+             Finally, choose two personality traits, one ideal, one bond, and one flaw.
+             If you can’t find a feature that matches your desired background, work with your DM to create one.</p>
+        </description>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency (Custom Background)" supports="Skill" number="2" />
+            <select type="Background Feature" name="Proficiencies" supports="Custom Background Proficiency Sets"/>           
+        </rules>
+	</element>
+    <element name="2 Tools" type="Background Feature" id="ID_CUSTOM_BACKGROUND_2TOOLS">
+        <supports>Custom Background Proficiency Sets</supports>
+        <description>
+            <p>Choose a total of two tool proficiencies or languages.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool" number="2"/>
+        </rules>
+    </element>
+    <element name="2 Languages" type="Background Feature" id="ID_CUSTOM_BACKGROUND_2LANGUAGES">
+        <supports>Custom Background Proficiency Sets</supports>
+        <description>
+            <p>Choose a total of two tool proficiencies or languages.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Language" name="Language (Custom Background)" number="2"/>
+        </rules>
+    </element>
+    <element name="1 Tool, 1 Language" type="Background Feature" id="ID_CUSTOM_BACKGROUND_1TOOL_1LANGUAGE">
+        <supports>Custom Background Proficiency Sets</supports>
+        <description>
+            <p>Choose a total of two tool proficiencies or languages.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool"/>
+            <select type="Language" name="Language (Custom Background)"/>
+        </rules>
+    </element>
+</elements>
