@@ -1,2 +1,2 @@
 # aroura
-Dnd 5e character builder
+Files for the Dnd 5e character building application, Aurora.
