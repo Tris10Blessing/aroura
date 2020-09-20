@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <name>Custom Background</name>
+        <description>Customizing Background option from the PHB.</description>
+        <author url="https://www.reddit.com/user/FrostyEdge/">FrostyEdge</author>
+		<update version="0.1">
+			<file name="individual-resilient-feats.xml" url="https://github.com/Tris10Blessing/aroura/blob/09fe246267f2f5b4fd6f16db8db3784ee1b0d155/custom-background.xml"/>
+		</update>
+	</info>
+	<element name="Resilient" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT">
+		<description>
+			<p>Choose one ability score. You gain the following benefits:</p>
+			<ul>
+				<li>Increase the chosen ability score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in saving throws using the chosen ability.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Resilient (Feat)" supports="Resilient" />
+		</rules>
+	</element>
+	<element name="Resilient (Strength)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_STRENGTH_INDIVIDUAL">
+		<compendium display="false" />
+		<description>
+			<p>Your Strength increases by 1.</p>
+			<p>You gain proficiency with Strength saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" alt="Resilient" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+		</rules>
+	</element>
+	<element name="Resilient (Dexterity)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_DEXTERITY_INDIVIDUAL">
+		<compendium display="false" />
+		<description>
+			<p>Your Dexterity increases by 1.</p>
+			<p>You gain proficiency with Dexterity saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" alt="Resilient" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+		</rules>
+	</element>
+	<element name="Resilient (Constitution)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_CONSTITUTION_INDIVIDUAL">
+		<compendium display="false" />
+		<description>
+			<p>Your Constitution increases by 1.</p>
+			<p>You gain proficiency with Constitution saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" alt="Resilient" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+		</rules>
+	</element>
+	<element name="Resilient (Intelligence)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_INTELLIGENCE_INDIVIDUAL">
+		<compendium display="false" />
+		<description>
+			<p>Your Intelligence increases by 1.</p>
+			<p>You gain proficiency with Intelligence saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" alt="Resilient" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+		</rules>
+	</element>
+	<element name="Resilient (Wisdom)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_WISDOM_INDIVIDUAL">
+		<compendium display="false" />
+		<description>
+			<p>Your Wisdom increases by 1.</p>
+			<p>You gain proficiency with Wisdom saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" alt="Resilient" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+		</rules>
+	</element>
+	<element name="Resilient (Charisma)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_CHARISMA_INDIVIDUAL">
+		<compendium display="false" />
+		<description>
+			<p>Your Charisma increases by 1.</p>
+			<p>You gain proficiency with Charisma saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" alt="Resilient" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+		</rules>
+	</element>
+</elements>
